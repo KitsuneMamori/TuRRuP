@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang= "nl">
+<head>
+<meta charset= "utf-8">
+<title> Contact gegevens</title>
+<style>
+body{
+font-family: arial;
+background-color:#dae1ed;
+}
+</style>
+</head>
+<body>
+<form action="contactgegevens.php" method="post"id="verzamel">
+<p> Voornaam:
+<input type="text"  name="voornaam" pattern=".{2,}" title="Minimaal 2 tekens" placeholder="voornaam"  required/>*</p>
+<p> Achternaam:
+<input type="text"  name="achternaam" pattern=".{2,}" title="Minimaal 2 tekens" placeholder="achternaam"  required/>*</p>
+<p> Geslacht:
+<br>
+<input type="radio" name= "geslacht" id="geslacht"value="Man" >Man<br>
+<input type="radio" name= "geslacht" id="geslacht"value="Vrouw" >Vrouw<br></p>
+<p> Geboortedatum:
+<input type= "date"name= "geboortedatum"></p>
+<p>E-mail:
+<input type="email" name="email" onClick="this.value=''" value="Vul in...." required />*</p>
+<p>Telefoon:
+<input type="tel" name="usrtel">
+<br><br>
+<input type="submit" value="Verzenden">
+</body>
+</html>

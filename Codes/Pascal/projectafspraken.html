@@ -1,0 +1,38 @@
+<!DOCTYPE html
+
+<html lang= "nl">
+<head>
+<meta charset="utf-8">
+<title> Project afspraken</title>
+<link rel= stylesheet type=text/css href= stylesheet.css />
+</head>
+<body>
+<ul>
+<nav>
+<li><a href= "contactgegevens.html">contactgegevens</a></li>
+</nav>
+<nav>
+<li><a href= "projectafspraken.php">Overzicht afspraken</a></li>
+</nav>
+</ul>
+<header>
+<h1 align= "center"><strong>Afspraken</strong></h1>
+</header>
+<section>
+<div id= "content">
+<h3>Titel:</h3><p> Project afspraken</p>
+<h3>Naam:</h3> <p>Pascal Heikamp</p>
+</div>
+</section>
+<section>
+<form action= "toevoegenafspraak.php" method="post">
+<p> Datum </p>
+<input type= "date" name= "datum">
+<p> Afspraak </p>
+<input type= "text" name= "afspraak">
+<p> Adres </p>
+<input type= "text" name= "adres">
+<input type= "submit" value= "Toevoegen">
+</form>
+</body>
+</html>

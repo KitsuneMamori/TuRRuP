@@ -1,0 +1,25 @@
+
+
+#content{
+border-style: groove;
+border-color: black;
+border- width: 20px;
+width: 175px;
+height:200px;
+}
+body{
+font-family: arial;
+background-color:#dae1ed;
+}
+table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+
+	
+
+
+
