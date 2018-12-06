@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulier</title>
+    <link rel="stylesheet" type="text/css" href="StylesheetFormulier.css" />
+</head>
+<center>
+    <body>
+        <div id="Inhoud" class="Inhoud">
+            <div id="form1" class="form1">
+                <h1 style="text-align: left;">Contact</h1>
+                <form action="code_formulier.php" method="post" style="text-align:left">
+                    <p style="text-align: left">
+                    </p>Naam:</p>
+                    <input type="text" name="naam" pattern=".{2,}" title="Minimaal 2 tekens" placeholder="Geef uw naam..." required />*
+                    </p>
+                    <p style="text-align: left">
+                    <p>E-mail:</p>
+                    <input type="email" name="email" onClick="this.value=''" value="Vul in..." placeholder="Vul in..." required />*
+                    </p
+                        <hr />
+                    <p>Hoe bent u op de site terecht gekomen?</p>
+                    <p style="text-align:left">
+                        <input type="checkbox" name="site[]" value="Door advertenties" />Door advertenties<br />
+                        <input type="checkbox" name="site[]" value="Door vrienden/familie" />Door vrienden/familie<br />
+                        <input type="checkbox" name="site[]" value="Door op Google te zoeken" />Door op Google te zoeken<br />
+                        <input type="checkbox" name="site[]" value="Door op Bing te zoeken" />Door op Bing te zoeken<br />
+                        <input type="checkbox" name="site[]" value="Door op Yahoo te zoeken" />Door op Yahoo te zoeken<br />
+                        <input type="checkbox" name="site[]" value="Overig" />Overig<br />
+                        <hr />
+                    <p>Wat vind u van onze website?</p>
+                    <select name="beoordeling">
+                        <option value="Super" selected="selected">Super site</option>
+                        <option value="Goed">Goed</option>
+                        <option value="Voldoende">Voldoende</option>
+                        <option value="Matig">Matig</option>
+                        <option value="Slecht">Slecht</option>
+                    </select>
+                    <hr />
+                    <p style="text-align: left">Uw opmerkingen?</p>
+                    <p style="text-align: left">
+                        <textarea rows="3" cols="27" id="opmerkingen" name="opmerkingen" placeholder="Geef hier uw opmerkingen.">
+</textarea>
+                    </p>
+                    <p style="text-align: left">
+                        <input type="submit" value="Verzenden"></br></br>
+                        <input type="reset" value="Reset"></br></br>
+                    </p>
+                </form>
+
+</div>
+    </body>
+</center>
+</html>
