@@ -1,4 +1,4 @@
-/*----- Toggle Button -----*/
+﻿/*----- Toggle Button -----*/
 .toggle-nav {
 	display:none;
 }
@@ -172,8 +172,8 @@
 
     #tekst_voor_box_links {
         margin: 30px 30px 30px 30px;
-        color: #ffffff;
     }
+
     body {
         background-color: #fb7211;
         font-family: Arial;
@@ -184,7 +184,6 @@
         background-color: #303030;
         width: 25%;
         float: right;
-        color: #ffffff;
     }
 
     #row {
@@ -228,15 +227,6 @@
 
 }
 
-/* contact */
-
-@media screen and (min-width: 768px) {
-    .block--contact-location:hover, .block--contact-photo-actions:hover, .block--contact:hover {
-        background-color: #b5a700;
-        text-decoration: none;
-
-    }
-}
 
 /* tekst */
 
@@ -245,14 +235,6 @@ h3 {
     font-size: 1.17em;
     font-weight: bold;
     text-decoration: none;
-}
-
-/* Create two equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 35%;
-    padding: 10px;
-    background-color: #7f7f7f;
 }
 
 /* Clear floats after the columns */
@@ -268,4 +250,15 @@ h3 {
 
 a {
     font-size: 25px;
+}
+
+#btnEmpty {
+    background-color: #ffffff;
+    border: #d00000 1px solid;
+    padding: 5px 10px;
+    color: #fb7211;
+    float: right;
+    text-decoration: none;
+    border-radius: 3px;
+    margin: 10px 0px;
 }
