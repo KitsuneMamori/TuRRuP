@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Vuurwerkshop het Vonkje</title>
+<link rel= stylesheet type=text/css href= hetvonkje.css />
+<script type="text/javascript">
+<!-- Javascript waarmee alles geladen wordt. !->
+<!-- Asynchronous JavaScript And XML (*j*x) !->
+
+function maakXMLObj()
+{
+   var objXml = false; 
+   try
+   {
+    // Firefox, Opera 8.0+, Safari
+    objXml = new XMLHttpRequest();
+   }
+   catch (e)
+   {
+    // Internet Explorer
+     try
+     {
+       objXml = new ActiveXObject("Msxml2.XMLHTTP");
+     }
+     catch (e)
+     {
+       try
+       {
+         objXml = new ActiveXObject("Microsoft.XMLHTTP");
+       }
+         catch (e)
+       {
+         alert("Je browser ondersteund geen *j*x!");
+         return false;
+       }
+     }
+   }
+   return objXml;
+}
+ 
+function VeranderContent ( target, content ) {
+  var xmlHttp = maakXMLObj();
+ 
+  xmlHttp.open ( "GET", content, true );
+  xmlHttp.onreadystatechange = function () {
+    if ( xmlHttp.readyState == 4 && xmlHttp.status == 200 ) {
+      document.getElementById(target).innerHTML = xmlHttp.responseText;
+    }
+  }
+  xmlHttp.send(null);
+}
+</script>
+ </head>
+ <body>
+ <div class="titel">
+ <h1> Vuurwerkshop het Vonkje</h1>
+ </div>
+<img src="http://i67.tinypic.com/142tu9l.png"width="75"height="75">
+ <div id="menu">
+<ul id="nav">
+<li><a href="#">Contact</a>
+ <ul>
+ <li><a href="#">Contactgegevens</a></li>
+ </ul>
+</li>
+
+<li><a href="#">Overzicht</a>
+ <ul>
+ <li><a href="overzichtvuurwerkartikelen.php">Vuurwerk-artikelen</a></li>
+ </ul>
+</li>
+
+<li><a href= "vuurwerktoevoegen.php"><img src="http://i65.tinypic.com/zk3fc6.gif" title= "winkelwagen" width= "50" height= "50"> </a></li>
+</div>
+<br><br><br><br>
+<div class="dropdown">
+  <button class="dropbtn">Categorie</button>
+  <div class="dropdown-content">
+<a href="#" title="Knalvuurwerk" id="K" OnClick="VeranderContent('content', 'knalvuurwerk.html')">Knalvuurwerk</a> <br />
+<a href="#" title="siervuurwerk" id="S" OnClick="VeranderContent('content', 'siervuurwerk.html')">Siervuurwerk</a> <br />
+<a href="#" title="compleetassortiment" id="C" OnClick="VeranderContent('content', 'compleetassortiment.html')">Compleet assortiment</a>
+  </div>
+</div><br><br><br>
+<br><br><br><br><br><br>
+<div id="content">
+<h1>Door uw het geslecteerde product</h1>
+<p>Hier worden de artikelen weergeven als uw een keuze maakt in het dropdown-menu.</p>
+</div>
+</body>
+</html>
+ 
+ 
